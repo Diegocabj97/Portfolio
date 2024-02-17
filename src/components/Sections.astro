@@ -1,0 +1,193 @@
+---
+
+---
+
+<section id="profile">
+  <h2>Sobre mi</h2>
+  <p>
+    Full Stack Developer con experiencia en el desarrollo de aplicaciones SPA,
+    con capacidad para trabajar en equipo.
+  </p>
+</section>
+<section id="skills">
+  <h2>Conocimientos</h2>
+  <ul>
+    <li><a href="#">HTML, CSS & Javascript</a></li>
+    <p>Mi primer proyecto de E-Commerce con HTML, CSS y Javascript</p>
+    <li><a href="#">ReactJs, ExpressJs & MongoDB</a></li>
+    <p>
+      E-Commerce con React, aplicando Backend con ExpressJs & MongoDB,
+      Autenticacion con JWT y Passport.
+    </p>
+    <li><a href="#">Astro</a></li>
+    <p>
+      Proyecto tipo Blog con Astro, tanto el proyecto como este Portfolio estan
+      realizados con Astro y ReactJs.
+    </p>
+
+    <li><a href="#">Otros Proyectos con estas tecnologías</a></li>
+  </ul>
+</section>
+<section id="contact">
+  <h2>Contact</h2>
+  <div>
+    <a href="#">Mi CV</a>
+    <a href="#">Github</a>
+  </div>
+</section>
+<style>
+  h1,
+  h2 {
+    font-weight: 900;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    display: flex;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav h1 {
+    font-size: 16px;
+  }
+  #skills h2 {
+    margin-bottom: 20px;
+  }
+  #skills ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin-top: 30px;
+    }
+  }
+  #contact a {
+    display: flex;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+  }
+  .end {
+    flex: 0 0 200px;
+  }
+
+  .end:last-child {
+    text-align: right;
+  }
+
+  .nav-items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: var(--button-size);
+    height: var(--button-size);
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+  }
+
+  .background::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(#0076ec, #31148c);
+  }
+
+  .nav-items a {
+    display: grid;
+    place-items: center;
+    width: var(--button-size);
+    height: var(--button-size);
+    padding: 10px;
+    color: #f9f9f9;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  section {
+    height: 100vh;
+    width: 100vw;
+    padding: 9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section:nth-child(even) {
+    background: #003cbe9f;
+  }
+
+  section p {
+    max-width: 600px;
+    opacity: 0.66;
+    text-align: center;
+  }
+  section li {
+    padding: 10px;
+    width: 100vw;
+    text-align: center;
+    background-color: #e9f0ff23;
+  }
+
+  #contact div {
+    margin-top: 50px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+
+    a {
+      margin-top: 90px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    h1,
+    h2 {
+      justify-content: start;
+    }
+    #profile h2 {
+      display: flex;
+      justify-content: end;
+    }
+    #profile p {
+      margin-left: 50vw;
+      display: flex;
+      justify-content: flex-end;
+      align-items: end;
+      text-align: end;
+    }
+  }
+  @media (min-width: 1368px) {
+    #profile h2 {
+      display: flex;
+      justify-content: end;
+    }
+    #skills ul {
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+    }
+    #skills li {
+      width: 40vw;
+      justify-content: start;
+    }
+  }
+</style>
