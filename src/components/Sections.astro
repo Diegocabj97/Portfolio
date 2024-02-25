@@ -60,10 +60,10 @@
 >
   <h2 class="flex font-black text-4xl justify-center mb-20">Contacto</h2>
   <div
-    class="grid grid-cols-1 sm:grid-cols-3 text-center text-l items-center font-black justify-center lg:flex-row lg:justify-evenly"
+    class="grid grid-cols-1 justify-items-center sm:grid-cols-3 text-center text-l items-center font-black justify-center lg:flex-row lg:justify-evenly"
   >
     <a
-      class="flex flex-col mb-16 sm:mb-0 sm:flex-row items-center justify-center text-center h-auto hover:scale-150 hover:shadow-white transition"
+      class="flex flex-col max-w-fit mb-16 sm:mb-0 sm:flex-row items-center justify-center text-center h-auto hover:scale-150 hover:shadow-white transition"
       href="/cv"
     >
       <span class="flex items-center mr-3">Mi CV</span>
@@ -79,7 +79,7 @@
       href="https://www.linkedin.com/in/diego-adri%C3%A1n-18824016a/"
       target="_blank"
       rel="noopener noreferrer"
-      class="flex flex-col items-center mb-16 sm:mb-0 justify-center text-center h-auto hover:scale-150 hover:shadow-white transition"
+      class="flex flex-col items-center max-w-fit mb-16 sm:mb-0 justify-center text-center h-auto hover:scale-150 hover:shadow-white transition"
       ><span class="text-center text-wrap">LinkedIn</span>
       <svg
         class="mx-auto mt-2"
@@ -115,7 +115,7 @@
       </svg>
     </a>
     <a
-      class="flex items-center flex-col mb-16 sm:mb-0 justify-center text-center h-auto hover:scale-150 hover:shadow-white transition"
+      class="flex items-center flex-col max-w-fit mb-16 sm:mb-0 justify-center text-center h-auto hover:scale-150 hover:shadow-white transition"
       target="_blank"
       rel="noopener noreferrer"
       href="https://github.com/Diegocabj97/"
@@ -160,5 +160,9 @@
 <style>
   section:nth-child(even) {
     background: #003cbe9f;
+  }
+
+  section a:hover {
+    filter: drop-shadow(0px 0px 20px #ffffff);
   }
 </style>
